@@ -1,0 +1,151 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+:root {
+    --yallow: #FDC800;
+    --blue: #002147;
+    --light-white: #F0F4F9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    
+    width: 87vw;
+    margin: auto;
+}
+
+nav{
+    background-color:var(--yallow);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+nav .lf-part {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    color: black;
+    font-size: 13px;
+}
+
+
+
+nav .lf-part div .dots {
+    display: none;
+}
+
+nav .lf-part  div , nav .lf-part  a  {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: black;
+}
+nav .lf-part  div p {
+   display: flex;
+    White-space: nowrap;
+}
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+nav .container .social {
+    display: flex; 
+    align-items: center;
+    gap: 15px;
+}
+
+
+header {
+    background-color: var(--blue);
+    color: var(--light-white);
+    padding: 150px 0;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+}
+header .container .header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+header .container .header-text h1{
+    font-size: 40px;
+    max-width: 20ch;
+}
+header .container .header-text p{
+    max-width: 55ch;
+    padding: 30px 0px;
+}
+header .container .header-text .header-btn {
+    display: flex;
+    gap: 20px;
+   
+}
+header .container .header-text .header-btn a {
+    border-radius: 7px;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: 400;
+}
+header .container .header-text .btn-left{
+    background-color: var(--yallow);
+    color: var(--blue);
+    padding: 12px 35px;
+    font-weight: 400;
+    
+}
+header .container .header-text .btn-right{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--blue);
+    color: var(--light-white);
+    padding: 10px 27px;
+  
+}
+
+
+@media (max-width: 850px) {
+    header .container {
+        flex-direction: column-reverse; 
+        align-items: center;
+    }
+    header .container .header-img img{
+        width: auto !important;
+   } 
+   header {
+    
+    padding: 70px 0;
+}
+}
+
+@media (max-width: 1050px) {
+    nav .lf-part div .secondLocation {
+        display: none !important;
+    }
+    nav .lf-part div .dots {
+        display: block !important;
+    }
+    header .container .header-text h1 {
+        font-size: 30px;
+    }
+   header .container .header-img img{
+         width: 400px;
+    } 
+    header .container .header-text {
+        margin-right: 50px;
+    }
+}
