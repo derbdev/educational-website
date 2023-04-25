@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+:root {
+
+    --yallow: #FDC800;
+    --blue:#002147;
+    --light-white: #F0F4F9;
+
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 85vw;
+   margin: auto;
+  
+}
+
+/*--------------- nav----------*/
+
+nav {
+    background-color: var(--yallow);
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.lf-part {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    font-size: 13px;
+}
+
+.lf-part div, .lf-part a {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    
+}
+.social-icon {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+
+
+header {
+    background-color: var(--blue);
+    color: var(--light-white);
+    padding: 150px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .container .text  {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+}
+
+header .container .text h1 {
+    font-size: 40px;
+    max-width: 20ch;
+}
+header .container .text p {
+    
+    max-width: 55ch;
+    padding: 30px 0;
+}
+
+
+.header-btn {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-btn a {
+    font-size: 15px;
+    font-weight: 400;
+    border: none;
+    
+    cursor: pointer;
+}
+
+.header-btn .btn-one {
+    border-radius: 7px ;
+    background-color: var(--yallow);
+    color: var(--blue);
+    font-weight: 400;
+   padding: 12px 35px;
+}
+
+.header-btn .btn-two {
+    color: white;
+   gap: 10px;
+    display: flex;
+    background: none;
+    padding: 10px 27px;
+}
+h1.londing {
+    display: none;
+}
+@media (max-width: 1100px) {
+    nav,header {
+        display: none;
+    }
+    body {
+        background-color: var(--blue);
+        color: var(--light-white);
+    
+
+    }
+
+    h1.londing {
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        font-weight: 200;
+        min-width: 25ch;
+        font-size: 24px;
+    }
+}
